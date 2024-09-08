@@ -2,7 +2,7 @@ import './style.css'
 import typescriptLogo from './typescript.svg'
 import viteLogo from '/vite.svg'
 import { setupCounter } from './counter.ts'
-import { name, age, isValid }  from "./bases/types.ts"
+import { pikachu, pokemonIds } from './bases/objects.ts';
 
 const app = document.querySelector<HTMLDivElement>('#app');
 
@@ -19,7 +19,7 @@ app!.innerHTML = `
       <button id="counter" type="button"></button>
     </div>
     <p class="read-the-docs">
-      I am ${name} and I am ${age} ${ isValid? "Soy true" : "Soy false"}
+      Hello World! ${ pikachu.name } ${ pokemonIds.join(',')}
     </p>
   </div>
 `;
