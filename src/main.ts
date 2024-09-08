@@ -2,6 +2,7 @@ import './style.css'
 import typescriptLogo from './typescript.svg'
 import viteLogo from '/vite.svg'
 import { setupCounter } from './counter.ts'
+import { name, age, isValid }  from "./bases/types.ts"
 
 const app = document.querySelector<HTMLDivElement>('#app');
 
@@ -18,7 +19,7 @@ app!.innerHTML = `
       <button id="counter" type="button"></button>
     </div>
     <p class="read-the-docs">
-      Click on the Vite and TypeScript logos to learn more
+      I am ${name} and I am ${age} ${ isValid? "Soy true" : "Soy false"}
     </p>
   </div>
 `;
